@@ -1,0 +1,32 @@
+@use '../../styles/partials/colors' as *;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-one;
+    padding: .5rem 1rem 1rem 1rem;
+
+    &__logo{
+        width: 15rem;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+
+       &-search{
+           padding: .3rem 1rem;
+
+       }
+       &-button{
+        margin-top: .5rem;
+        font-weight: 600;
+        color: $primary-one;
+        background-color: $logo-color-one;
+        height: 2;
+        border: none;
+       }
+    }
+}

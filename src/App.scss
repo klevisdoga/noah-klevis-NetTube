@@ -1,0 +1,10 @@
+@use './styles/partials/fonts' as *;
+
+*{
+  font-family: Quicksand;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+}

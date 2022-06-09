@@ -1,0 +1,9 @@
+.movie{
+    display: flex;
+    overflow: hidden;
+
+    &__thumbnail{
+        width: 50%;
+        padding-right: 1rem;
+    }
+}

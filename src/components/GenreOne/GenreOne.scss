@@ -1,0 +1,11 @@
+@use '../../styles/partials/colors' as *;
+
+.genre__one{
+
+    padding: 1rem;
+
+    &-title{
+        color: $primary-outline;
+        font-size: 1.5rem;
+    }
+}
