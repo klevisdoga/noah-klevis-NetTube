@@ -1,5 +1,10 @@
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
 
 .home{
     background-color: $secondary-one;
+
+    @include tablet{
+        padding: 2rem;
+    }
 }

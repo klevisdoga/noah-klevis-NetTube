@@ -8,10 +8,12 @@ export default function FeaturedVideo() {
             <h1 className='featured__title'>Featured</h1>
             <div className='featured__movie'>
                 <img className='featured__movie-image' src={PH} alt='blah' />
-                <span className='featured__movie-title'>{'Movie Title'}</span>
-                <span className='featured__movie-desc'>
-                    {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"}
-                </span>
+                <div className='featured__movie-text'>
+                    <span className='featured__movie-title'>{'Movie Title'}</span>
+                    <span className='featured__movie-desc'>
+                        {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"}
+                    </span>
+                </div>
             </div>
         </div>
     )
