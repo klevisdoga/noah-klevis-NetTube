@@ -16,7 +16,7 @@
         overflow-y: hidden;
         overflow-x: scroll;
         padding: 1rem 0;
-        
+        scroll-behavior: smooth;
     }
 
     &-list::-webkit-scrollbar {
@@ -33,16 +33,30 @@
     }
 
     &-left {
-        position: sticky;
-        z-index: 1;
-        left: 0;
-        top: 45%;
+        display: none;
+        @include tablet{
+            display: initial;
+            position: sticky;
+            z-index: 1;
+            left: 0;
+            top: 45%;
+            background-color: rgba($color: $primary-one, $alpha: .5);
+            border: none;
+            color: white;
+        }
     }
 
     &-right {
-        position: sticky;
-        z-index: 1;
-        right: 0%;
-        top: 45%;
+        display: none;
+        @include tablet{
+            display: initial;
+            position: sticky;
+            z-index: 1;
+            right: 0%;
+            top: 45%;
+            background-color: rgba($color: $primary-one, $alpha: .5);
+            border: none;
+            color: white;
+        }
     }
 }
