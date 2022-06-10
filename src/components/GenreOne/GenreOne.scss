@@ -2,12 +2,16 @@
 @use '../../styles/partials/mixins' as *;
 
 .genre__one{
-
     padding: 1rem;
     padding-bottom: 0;
 
     @include tablet{
         padding: 1rem 0;
+    }
+
+    &-list{
+        display: flex;
+        overflow: hidden;
     }
 
     &-title{

@@ -6,7 +6,7 @@ export default class PageGenres extends Component {
   render() {
     return (
       <div className='genres'>
-          <GenreOne/>
+        <GenreOne />
       </div>
     )
   }
