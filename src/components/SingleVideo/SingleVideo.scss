@@ -1,15 +1,11 @@
 @use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/colors' as *;
 
 .movie{
-    overflow: hidden;
     display: flex;
-
-    &--active{
-        border: 2px solid $primary-outline;
-    }
+    overflow: hidden;
 
     &__thumbnail{
-        width: 100%;
+        width: 50%;
+        padding-right: 1rem;
     }
 }
