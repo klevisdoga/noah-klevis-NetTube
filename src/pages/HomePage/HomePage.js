@@ -4,6 +4,8 @@ import PageGenres from '../../components/PageGenres/PageGenres'
 import './HomePage.scss'
 
 export default class HomePage extends Component {
+
+  
   render() {
     return (
       <div className='home'>

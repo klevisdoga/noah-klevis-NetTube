@@ -22,7 +22,9 @@ export default function Row({ title, movies }) {
             {
                 movies?.map(movie => {
                     const item = (
+                       
                         <SingleVideo key={movie.id} image={`${image_url}${movie.poster_path}`} />
+                        
                     );
 
                     return item;

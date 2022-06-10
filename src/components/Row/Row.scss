@@ -1,6 +1,14 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/mixins' as *;
 
+a {
+    all: unset;
+}
+
+.active {
+    all: unset;
+}
+
 .genre__one{
 
     padding: 1rem;

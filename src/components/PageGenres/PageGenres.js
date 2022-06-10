@@ -9,6 +9,10 @@ export default class PageGenres extends Component {
     action: []
   }
 
+  handleClick = (id) => {
+    this.setState({id: id, clickedOn: false});
+  }
+
   componentDidMount() {
     // Fetch action movies
     axios.get(requests.fetchAction)
