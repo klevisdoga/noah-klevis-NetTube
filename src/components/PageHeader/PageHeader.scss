@@ -12,14 +12,18 @@
     @include tablet{
         flex-direction: row;
         justify-content: space-between;
-        padding: 1rem 2rem 1rem 1.5rem;
+        padding: 1rem 2rem 1rem 1.3rem;
+    }
+
+    @include desktop{
+        padding: 1rem 6rem 1rem 5.2rem;
     }
 
     &__logo{
         width: 15rem;
 
         @include tablet{
-            width: 8rem;
+            width: 10rem;
         }
     }
 
@@ -38,7 +42,9 @@
            border: none;
 
            @include tablet{
-               margin-right: 1rem;
+               margin-right: 2rem;
+               width: 15rem;
+               height: 2rem;
            }
 
        }
@@ -53,8 +59,8 @@
 
         @include tablet{
             margin: 0;
-            height: 1.5rem;
-            width: 4rem;
+            height: 2rem;
+            width: 6rem;
         }
        }
     }

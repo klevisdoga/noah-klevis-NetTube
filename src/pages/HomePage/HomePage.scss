@@ -7,4 +7,8 @@
     @include tablet{
         padding: 2rem;
     }
+
+    @include desktop{
+        padding: 2rem 6rem;
+    }
 }

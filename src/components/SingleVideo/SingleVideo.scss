@@ -1,3 +1,5 @@
+@use '../../styles/partials/mixins' as *;
+
 .movie{
     display: flex;
     overflow: hidden;

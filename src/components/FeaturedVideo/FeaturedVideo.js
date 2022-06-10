@@ -11,7 +11,7 @@ export default function FeaturedVideo() {
                 <div className='featured__movie-text'>
                     <span className='featured__movie-title'>{'Movie Title'}</span>
                     <span className='featured__movie-desc'>
-                        {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"}
+                        {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "}
                     </span>
                 </div>
             </div>
