@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import SingleVideo from '../SingleVideo/SingleVideo'
 import './Row.scss'
 
 const image_url = "https://image.tmdb.org/t/p/original/";
 
-export default function Row({ title, movies }) {
 
+export default function Row({ title, movies }) {
+    
     return (
         <div className='genre__one'>
             <h2 className='genre__one-title'>{title}</h2>
             <div className='genre__one-list'>
+            <button className='genre__one-left'type='button'>BUTTON</button>
             {
                 movies?.map(movie => {
                     const item = (
@@ -19,14 +21,8 @@ export default function Row({ title, movies }) {
                     return item;
                 })
             }
+            <button className='genre__one-right'type='button'>BUTTON</button>
             </div>
         </div>
     )
 };
-
-/**
- * <h2 className='genre__one-title'>{title}</h2>
-            <div className='genre__one-list'>
-                <SingleVideo />
-            </div>
- */

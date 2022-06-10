@@ -40,11 +40,6 @@ export default class PageGenres extends Component {
     axios.get(requests.fetchRomance)
     .then(res => this.setState({romance: res.data.results}))
     .catch(res => console.log(res));
-
-    //Fetch documentaries
-    axios.get(requests.fetchDocumentaries)
-    .then(res => this.setState({documentary: res.data.results}))
-    .catch(res => console.log(res));
     }, 1);
   }
 
