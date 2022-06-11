@@ -1,5 +1,5 @@
-@use '../../styles/partials/colors' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 a {
     all: unset;
@@ -9,16 +9,15 @@ a {
     all: unset;
 }
 
-.genre__one{
-
+.genre__one {
     padding: 1rem;
     padding-bottom: 0;
 
-    @include tablet{
+    @include tablet {
         padding: 1rem 0;
     }
 
-    &-list{
+    &-list {
         position: relative;
         display: flex;
         overflow-y: hidden;
@@ -31,24 +30,24 @@ a {
         display: none;
     }
 
-    &-title{
+    &-title {
         color: $primary-outline;
         font-size: 1.5rem;
 
-        @include tablet{
+        @include tablet {
             font-size: 1.8rem;
         }
     }
 
     &-left {
         display: none;
-        @include tablet{
+        @include tablet {
             display: initial;
             position: sticky;
             z-index: 1;
             left: 0;
             top: 45%;
-            background-color: rgba($color: $primary-one, $alpha: .5);
+            background-color: rgba($color: $primary-one, $alpha: 0.5);
             border: none;
             color: white;
         }
@@ -56,15 +55,97 @@ a {
 
     &-right {
         display: none;
-        @include tablet{
+        @include tablet {
             display: initial;
             position: sticky;
             z-index: 1;
             right: 0%;
             top: 45%;
-            background-color: rgba($color: $primary-one, $alpha: .5);
+            background-color: rgba($color: $primary-one, $alpha: 0.5);
             border: none;
             color: white;
+        }
+    }
+}
+.selected__movie {
+    &-details {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+
+        @include tablet {
+            justify-content: initial;
+            width: 100%;
+        }
+    }
+
+    &-poster {
+        width: 100%;
+        order: 2;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+
+        @include tablet {
+            mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        }
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        height: 100%;
+        width: 90%;
+
+        @include tablet {
+            width: 40rem;
+        }
+    }
+
+    &-title {
+        color: white;
+        font-size: 1rem;
+        margin: 1rem 0;
+
+        @include tablet {
+            font-size: 2.2rem;
+        }
+
+        @include desktop{
+            font-size: 4rem;
+        }
+    }
+
+    &-desc {
+        color: white;
+        font-size: 0.7rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        @include desktop{
+            font-size: 2rem;
+        }
+    }
+
+    &-button{
+        position: absolute;
+        color: white;
+        cursor: pointer;
+        top: .5rem;
+        right: .5rem;
+
+        @include tablet{
+            top: 1rem;
+            right: 1rem;
+        }
+
+        @include desktop{
+            top: 2rem;
+            right: 2rem;
         }
     }
 }
