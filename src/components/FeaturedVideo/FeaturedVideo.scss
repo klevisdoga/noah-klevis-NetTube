@@ -70,6 +70,7 @@
 
             @include desktop {
                 font-size: 4rem;
+                width: 150%
             }
         }
 
@@ -80,11 +81,11 @@
             width: 100%;
 
             @include tablet {
+                width: 200%;
             }
 
             @include desktop {
                 font-size: 1.3rem;
-                width: 30rem;
             }
         }
     }
