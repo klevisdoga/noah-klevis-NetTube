@@ -1,0 +1,7 @@
+@use '../../styles/partials/mixins' as *;
+
+.genres{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}

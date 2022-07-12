@@ -1,0 +1,67 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-one;
+    padding: .5rem 1rem 1rem 1rem;
+
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem 1rem 1.3rem;
+    }
+
+    @include desktop{
+        padding: 1rem 6rem 1rem 5.2rem;
+    }
+
+    &__logo{
+        width: 15rem;
+
+        @include tablet{
+            width: 10rem;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+
+        @include tablet{
+            flex-direction: row;
+            align-items: center;
+        }
+
+       &-search{
+           padding: .3rem 1rem;
+           border-radius: 4px;
+           border: none;
+
+           @include tablet{
+               margin-right: 2rem;
+               width: 15rem;
+               height: 2rem;
+           }
+
+       }
+       &-button{
+        margin-top: .5rem;
+        font-weight: 600;
+        color: $primary-one;
+        background-color: $logo-color-one;
+        height: 2;
+        border-radius: 4px;
+        border: none;
+
+        @include tablet{
+            margin: 0;
+            height: 2rem;
+            width: 6rem;
+        }
+       }
+    }
+}
